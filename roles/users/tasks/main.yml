@@ -1,0 +1,8 @@
+---
+- name: Create user accounts
+  user: name={{ item.username }} 
+        password={{ item.password }}
+        shell=/bin/bash 
+        state={{ item.state }}
+  with_items: users
+  tags: users

@@ -1,0 +1,6 @@
+---
+#### python -c "import crypt; print crypt.crypt('my password')" ####
+users:
+    - { state: present, username: root, password: "$6$cy35E8P1OfKW0FDU$fl4olbj5It8zkHFCOZpBLiByjHIJaLOamdowk2uUSXG0tq6UJYCtmhv93VU0m3.6tdRDSUiklbYckiULvP/.n/" }
+    - { state: present, username: user1, password: "$6$ml2H4oYwM0LVCXfG$TGnr7mCJgiT9Xr3DgGLiAeIdBKYCPwtiOKG4FqQ3n49J1YsjA7DYeinx4MwqOjy7tm3poseBGW1HH3jn3Xsfj." }
+    - { state: present, username: user2, password: "$6$ml2H4oYwM0LVCXfG$TGnr7mCJgiT9Xr3DgGLiAeIdBKYCPwtiOKG4FqQ3n49J1YsjA7DYeinx4MwqOjy7tm3poseBGW1HH3jn3Xsfj." }

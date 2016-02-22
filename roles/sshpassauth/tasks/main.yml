@@ -1,0 +1,5 @@
+---
+- name: Enable SSH password auh
+  lineinfile: dest=/etc/ssh/sshd_config regexp='^PasswordAuthentication' line='PasswordAuthentication yes' backrefs=yes state=present
+  notify:
+    - Reload sshd
